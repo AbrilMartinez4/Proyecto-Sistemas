@@ -6,13 +6,15 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.IO;
+using System.IO.Ports;
 
 namespace Configuración
 {
     public partial class Form1 : DevExpress.XtraEditors.XtraForm
     {
         #region Constructor
-        string Primer_op = "0";     
+        string Primer_op = "dddd";     
         public Form1()
         {
             InitializeComponent();     
@@ -137,6 +139,7 @@ namespace Configuración
         #region Timer
         private void timer1_Tick(object sender, EventArgs e)
         {
+            Primer_op = ((tbPorcentaje.Value == 10) ? ":" : tbPorcentaje.Value.ToString()) + ((tbH.Value == 10) ? ":" : tbH.Value.ToString()) +((tbTracera.Value==10)? ":": tbTracera.Value.ToString()) + ((tbVisor.Value==10)? ":": tbVisor.Value.ToString());
             serialPort1.Write(Primer_op);
         }
         #endregion

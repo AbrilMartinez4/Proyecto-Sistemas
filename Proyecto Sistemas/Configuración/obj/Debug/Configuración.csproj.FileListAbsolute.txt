@@ -16,3 +16,5 @@ C:\Users\Abril\Desktop\Sistemas\Proyecto Sistemas\Configuración\obj\Debug\Confi
 C:\Users\Abril\Desktop\Sistemas\Proyecto Sistemas\Configuración\obj\Debug\Configuración.Properties.Resources.resources
 C:\Users\Abril\Desktop\Sistemas\Proyecto Sistemas\Configuración\obj\Debug\Configuración.csproj.GenerateResource.Cache
 C:\Users\Abril\Desktop\Sistemas\Proyecto Sistemas\Configuración\obj\Debug\Configuración.exe.licenses
+C:\Users\UsuarioLocal\Desktop\Proyecto-Sistemas\Proyecto Sistemas\Configuración\obj\Debug\Configuración.exe
+C:\Users\UsuarioLocal\Desktop\Proyecto-Sistemas\Proyecto Sistemas\Configuración\obj\Debug\Configuración.pdb
