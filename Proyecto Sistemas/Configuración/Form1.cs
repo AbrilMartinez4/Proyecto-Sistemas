@@ -123,10 +123,10 @@ namespace Configuración
         #region Form y puertos
         private void Form1_Load(object sender, EventArgs e)
         {
-            serialPort1.PortName = "COM11";
-            serialPort1.Open();
+            serialPort1.PortName = "COM7";
+            
             timer1.Interval = 100;
-            timer1.Start();
+            
 
         }
 
@@ -165,6 +165,31 @@ namespace Configuración
             toolTip1.SetToolTip(tbH, tbH.Value.ToString());
         }
         #endregion
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+            if (serialPort1.IsOpen)
+            {
+                btnGuardar.Text = "Sincronizar";
+                timer1.Stop();
+                serialPort1.Close();
+                
+            }
+            else
+            {
+                serialPort1.Open();
+                timer1.Start();
+                btnGuardar.Text = "Desconectar";
+            }
+        }
+
+        private void btnRestablecer_Click(object sender, EventArgs e)
+        {
+            tbH.Value = 0;
+            tbPorcentaje.Value = 0;
+            tbTracera.Value = 0;
+            tbVisor.Value = 0;
+        }
 
 
     }
